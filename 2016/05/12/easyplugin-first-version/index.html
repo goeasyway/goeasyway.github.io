@@ -68,7 +68,7 @@
 <link href="/css/main.css?v=5.0.1" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content="Hexo, NexT" />
+  <meta name="keywords" content="Plugin," />
 
 
 
@@ -84,15 +84,19 @@
 
 
 
-<meta name="description" content="Android React Natvie 移动开发">
-<meta property="og:type" content="website">
-<meta property="og:title" content="GoeasyWay">
-<meta property="og:url" content="http://www.goeasyway.net/index.html">
+<meta name="description" content="2015年Android的插件开发热情空前高涨，开源的插件框架也如雨后春笋，初步了解对比了一下各个开源框架，感觉各有千秋。因为面对不同的业务需求，所以在针对性和实现方式上都略有不同。
+在没有开源框架的时候，世界很安静，大家只能低头研究android机制和framework的代码自己闭门造车，一直怨恨无人同行且不能踩在前辈的肩膀向上。而今面对扑面而来的开源插件时，大家又陷入选择的泥潭而不能自拔，这真">
+<meta property="og:type" content="article">
+<meta property="og:title" content="EasyPlug--最简单的Android开源插件框架">
+<meta property="og:url" content="http://www.goeasyway.net/2016/05/12/easyplugin-first-version/index.html">
 <meta property="og:site_name" content="GoeasyWay">
-<meta property="og:description" content="Android React Natvie 移动开发">
+<meta property="og:description" content="2015年Android的插件开发热情空前高涨，开源的插件框架也如雨后春笋，初步了解对比了一下各个开源框架，感觉各有千秋。因为面对不同的业务需求，所以在针对性和实现方式上都略有不同。
+在没有开源框架的时候，世界很安静，大家只能低头研究android机制和framework的代码自己闭门造车，一直怨恨无人同行且不能踩在前辈的肩膀向上。而今面对扑面而来的开源插件时，大家又陷入选择的泥潭而不能自拔，这真">
+<meta property="og:updated_time" content="2016-05-12T14:36:28.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="GoeasyWay">
-<meta name="twitter:description" content="Android React Natvie 移动开发">
+<meta name="twitter:title" content="EasyPlug--最简单的Android开源插件框架">
+<meta name="twitter:description" content="2015年Android的插件开发热情空前高涨，开源的插件框架也如雨后春笋，初步了解对比了一下各个开源框架，感觉各有千秋。因为面对不同的业务需求，所以在针对性和实现方式上都略有不同。
+在没有开源框架的时候，世界很安静，大家只能低头研究android机制和framework的代码自己闭门造车，一直怨恨无人同行且不能踩在前辈的肩膀向上。而今面对扑面而来的开源插件时，大家又陷入选择的泥潭而不能自拔，这真">
 
 
 
@@ -110,7 +114,7 @@
   };
 </script>
 
-  <title> GoeasyWay </title>
+  <title> EasyPlug--最简单的Android开源插件框架 | GoeasyWay </title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
@@ -131,9 +135,7 @@
     
   
 
-  <div class="container one-collumn sidebar-position-left 
-   page-home 
- ">
+  <div class="container one-collumn sidebar-position-left page-post-detail ">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -200,9 +202,9 @@
         <div class="content-wrap">
           <div id="content" class="content">
             
-  <section id="posts" class="posts-expand">
+
+  <div id="posts" class="posts-expand">
     
-      
 
   
   
@@ -222,10 +224,7 @@
             
             
               
-                
-                <a class="post-title-link" href="/2016/05/12/easyplugin-first-version/" itemprop="url">
-                  EasyPlug--最简单的Android开源插件框架
-                </a>
+                EasyPlug--最简单的Android开源插件框架
               
             
           </h1>
@@ -265,9 +264,7 @@
       
 
       
-        
-          
-            <p>2015年Android的插件开发热情空前高涨，开源的插件框架也如雨后春笋，初步了解对比了一下各个开源框架，感觉各有千秋。因为面对不同的业务需求，所以在针对性和实现方式上都略有不同。</p>
+        <p>2015年Android的插件开发热情空前高涨，开源的插件框架也如雨后春笋，初步了解对比了一下各个开源框架，感觉各有千秋。因为面对不同的业务需求，所以在针对性和实现方式上都略有不同。</p>
 <p>在没有开源框架的时候，世界很安静，大家只能低头研究android机制和framework的代码自己闭门造车，一直怨恨无人同行且不能踩在前辈的肩膀向上。而今面对扑面而来的开源插件时，大家又陷入选择的泥潭而不能自拔，这真是幸福的烦恼。每个插件框架都各有各的优缺点，当你花时间去熟悉对比完各个插件框架后，你也不一定能百分百确定某某框架一定适合你用。你终于在绕了一圈后又回到起点，是自己写一个框架呢还是用开源框架呢？因为你始终不能确认开源的框架是否能经得起实际项目的检测，害怕还有N多不知道的坑在等着你。</p>
 <p>这就是我推出EasyPlug的目的，无他就是要easy！大道至简，对系统HOOK太多也就会依赖太多，GOOGLE或手机产商任何一点小改动都可能会让你的HOOK失效。太多的功能就会面对太多的不稳定性，太多的类和设计模式会加剧开发者学习曲线，所以EasyPlug要在实现既定目标的前提下，用尽可能少的代码来实现一个基本的插件框架，并用实际中的经验帮大家把兼容性的坑填平。</p>
 <h1 id="需求"><a href="#需求" class="headerlink" title="需求"></a>需求</h1><p>首先明确一下EasyPlug要解决的问题：</p>
@@ -304,36 +301,44 @@
 <li>如果大家在使用中遇到问题，可以加入QQ群（7043869）一起讨论。</li>
 </ol>
 
-          
+      
+    </div>
+
+    <div>
+      
         
       
     </div>
 
     <div>
       
-    </div>
+        
 
-    <div>
       
     </div>
 
     <footer class="post-footer">
       
-
+        <div class="post-tags">
+          
+            <a href="/tags/Plugin/" rel="tag">#Plugin</a>
+          
+        </div>
       
 
       
+
       
-        <div class="post-eof"></div>
       
     </footer>
   </article>
 
 
-    
-  </section>
 
-  
+    <div class="post-spread">
+      
+    </div>
+  </div>
 
 
           </div>
@@ -341,6 +346,10 @@
 
 
           
+  <div class="comments" id="comments">
+    
+  </div>
+
 
         </div>
         
@@ -360,8 +369,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview sidebar-panel  sidebar-panel-active ">
+      <section class="site-overview sidebar-panel ">
         <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
           <img class="site-author-image" itemprop="image"
                src="/images/avatar.gif"
@@ -404,6 +422,17 @@
 
       </section>
 
+      
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+            
+              
+            
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#需求"><span class="nav-number">1.</span> <span class="nav-text">需求</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Demo"><span class="nav-number">2.</span> <span class="nav-text">Demo</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#使用方法"><span class="nav-number">3.</span> <span class="nav-text">使用方法</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#TODO"><span class="nav-number">4.</span> <span class="nav-text">TODO</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#总结"><span class="nav-number">5.</span> <span class="nav-text">总结</span></a></li></ol></div>
+            
+          </div>
+        </section>
       
 
     </div>
@@ -500,6 +529,10 @@
   
 
   
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.0.1"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.0.1"></script>
+
+
 
   
 

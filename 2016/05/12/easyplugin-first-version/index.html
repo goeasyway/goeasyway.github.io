@@ -92,7 +92,7 @@
 <meta property="og:site_name" content="GoeasyWay">
 <meta property="og:description" content="2015年Android的插件开发热情空前高涨，开源的插件框架也如雨后春笋，初步了解对比了一下各个开源框架，感觉各有千秋。因为面对不同的业务需求，所以在针对性和实现方式上都略有不同。
 在没有开源框架的时候，世界很安静，大家只能低头研究android机制和framework的代码自己闭门造车，一直怨恨无人同行且不能踩在前辈的肩膀向上。而今面对扑面而来的开源插件时，大家又陷入选择的泥潭而不能自拔，这真">
-<meta property="og:updated_time" content="2016-05-13T12:30:20.000Z">
+<meta property="og:updated_time" content="2016-05-13T12:44:38.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="EasyPlug--最简单的Android开源插件框架">
 <meta name="twitter:description" content="2015年Android的插件开发热情空前高涨，开源的插件框架也如雨后春笋，初步了解对比了一下各个开源框架，感觉各有千秋。因为面对不同的业务需求，所以在针对性和实现方式上都略有不同。
@@ -326,7 +326,7 @@
 <li>模块化开发：模块可以独立开发，甚至在Android设备上安装运行和调式；各个模块应相互解耦，也可以有效的解决DEX方法数65535上限的问题。</li>
 <li>不改变原生开发规范：插件的开发仍然按原生开发APK应用的规范，不需要额外学习成本；插件不需要添加需置文件。</li>
 <li>动态部署：可以动态安装、卸载和更新插件，安装和更新完成后插件可以直接运行，不需要宿主进程重启。</li>
-<li>支持插件调用宿主的类：这样很多基础功能（OKHttp, Retrofix, RxJava等）可以编译打包在宿主的APK中，插件无需将这个包打入自己的APK，在运行时用到会从宿主的类加载器中加载。可以极大的减小插件包的大小，并可以对基础库进行统一处理。</li>
+<li>支持插件调用宿主的类：这样很多基础功能（OKHttp, Retrofit, RxJava等）可以编译打包在宿主的APK中，插件无需将这个包打入自己的APK，在运行时用到会从宿主的类加载器中加载。可以极大的减小插件包的大小，并可以对基础库进行统一处理。</li>
 <li>支持常用功能：Activity, Service，自定义View, so库等；</li>
 </ol>
 <h1 id="Demo"><a href="#Demo" class="headerlink" title="Demo"></a>Demo</h1><p>如何确认EasyPlug是否合适你的项目使用，请直接看如下的例子，直接不做修改将百度和高德地图的DEMO做为插件。</p>
